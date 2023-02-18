@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Super Cart</title>
+  <!-- custom css -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="navbar-center">
+      <span class="nav-icon bars-icon">
+        <i class="fas fa-bars"></i>
+      </span>
+      <!-- <img src="./images/logo.svg" alt="store logo" /> -->
+      <div class="cart-btn">
+        <span class="nav-icon">
+          <img src="images\shopping_cart_img.png"width="30" height="30">
+        </span>
+        <div class="cart-items">0</div>
+      </div>
+    </div>
+  </nav>
+  <!-- end of nabar -->
+  <!-- hero -->
+  <header class="hero">
+    <div class="banner">
+      <h1 class="banner-title">My Unified Cart</h1>
+      <button class="banner-btn shop-now-btn">To Cart</button>
+    </div>
+  </header>
+  <!-- end of hero -->
+  <!-- cart -->
+  <div class="cart-overlay">
+    <div class="cart">
+      <span class="close-cart">
+        <img src="images\button-close-window-img2.png"width="30" height="30">
+      </span>
+      <table>
+        <tr>
+          <td class="dropdown">
+            <a href="#" class="dropbtn">Sort by:</a>
+            <div class="dropdown-content" id="cart-dropdown-content">
+              <a id="sort-by-brand" href="#">Brand</a>
+              <a id="sort-a-to-z" href="#">A-Z</a>
+              <a id="sort-by-price-ascending" href="#">Price (low to high)</a>
+              <a id="sort-by-price-descending" href="#">Price (high to low)</a>
+            </div>
+          </td>
+          <td class="dropdown">
+            <a href="#" class="dropbtn">Filter by:</a>
+            <div class="dropdown-content" id="categories-dropdown-content">
+            </div>
+          </td>
+          <td class="dropdown">
+            <a href="#" class="dropbtn">Deduplicate:</a>
+            <div class="dropdown-content" id="categories-dropdown-content">
+              <a id="find-duplicates" href="#">Find duplicates</a>
+              <a id="find-similarities" href="#">Find similarities</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <div class="duplicates" style="display: none;">
+      </div>
+      <div class="similarities" style="display: none;">
+      </div>
+      <h2>your cart</h2>
+      <div class="cart-content">
+      </div>
+      <div class="cart-footer">
+        <h3>your total : $ <span class="cart-total">0</span></h3>
+        <!-- <button class="clear-cart banner-btn">clear cart</button> -->
+      </div>
+    </div>
+  </div>
+  <!-- end of cart -->
+  <!-- analytics js -->
+  <script src="analytics.js"></script>
+  <!-- app js -->
+  <script src="app.js"></script>
+</body>
+
+</html>
